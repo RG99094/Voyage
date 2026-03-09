@@ -29,9 +29,21 @@ app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true }));
 
 // ✅ 0. CORS - Must be first!
+const allowedOrigins = process.env.CLIENT_URL
+  ? process.env.CLIENT_URL.split(',').map(url => url.trim())
+  : ["https://voyage-um9g.vercel.app", "http://localhost:5173"];
+
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || "https://voyage-um9g.vercel.app",
+    origin: function (origin, callback) {
+      // Allow requests with no origin (like mobile apps or curl requests)
+      // or if the origin is in our allowed list
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
     credentials: true,
     allowedHeaders: ["Content-Type", "Authorization", "x-auth-token"],
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
