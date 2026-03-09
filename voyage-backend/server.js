@@ -31,7 +31,7 @@ app.use(express.urlencoded({ extended: true }));
 // ✅ 0. CORS - Must be first!
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || "http://localhost:5173",
+    origin: process.env.CLIENT_URL || "https://voyage-um9g.vercel.app",
     credentials: true,
     allowedHeaders: ["Content-Type", "Authorization", "x-auth-token"],
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],

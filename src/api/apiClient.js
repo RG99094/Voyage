@@ -7,7 +7,7 @@ const normalizeBaseUrl = (url) => url.replace(/\/+$/, "");
 
 // ✅ Exported base URL for global use (e.g., image paths)
 export const BASE_URL = normalizeBaseUrl(
-  import.meta.env.VITE_API_BASE_URL?.trim() || "http://localhost:5001"
+  import.meta.env.VITE_API_BASE_URL?.trim() || "https://voyage-n3rt.onrender.com"
 );
 
 // ✅ Create a pre-configured Axios instance

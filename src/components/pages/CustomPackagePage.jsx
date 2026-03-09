@@ -35,8 +35,9 @@ const CustomPackagePage = () => {
         const fetchPlaces = async () => {
             setLoading(true);
             try {
+                const { BASE_URL } = await import('../../api/apiClient');
                 const res = await axios.get(
-                    `http://localhost:5001/api/places/state/${selectedState}`
+                    `${BASE_URL}/api/places/state/${selectedState}`
                 );
                 setPlaces(res.data);
 
