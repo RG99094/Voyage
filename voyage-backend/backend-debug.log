@@ -1,0 +1,142 @@
+[2025-12-15T11:51:43.556Z] 👉 /book Endpoint Hit
+[2025-12-15T11:51:43.556Z] 📥 user: {"id":"68e8e85067e3c6bf0b9c1364","email":"bwn.1903@gmail.com","name":"Ravi Golaviya"}
+[2025-12-15T11:51:43.556Z] 📥 body: {"packageId":"6910cdaed555b7049d4605eb","clientName":"Ravi Golaviya","clientEmail":"bwn.1903@gmail.com","clientPhone":"5556566565","packageName":"Valley of Flowers Trek Expedition","date":"2025-12-31","guests":"1","requests":"","location":"Chamoli District, Uttarakhand","duration":"6","totalAmount":"30000","paymentStatus":"Completed","transactionId":"VOYAGE-1765799501514"}
+[2025-12-15T11:51:43.557Z] 📂 file: doc-68e8e85067e3c6bf0b9c1364-1765799503540.jpg
+[2025-12-15T11:56:51.053Z] 👉 /book Endpoint Hit
+[2025-12-15T11:56:51.053Z] 📥 user: {"id":"68e8e85067e3c6bf0b9c1364","email":"bwn.1903@gmail.com","name":"Ravi Golaviya"}
+[2025-12-15T11:56:51.053Z] 📥 body: {"packageId":"6910cd35d555b7049d4605de","clientName":"Ravi Golaviya","clientEmail":"bwn.1903@gmail.com","clientPhone":"6556654664","packageName":"Ooty & Kodaikanal Family Vacation","date":"2025-12-31","guests":"1","requests":"","location":"Tamil Nadu, India","duration":"5","totalAmount":"35000","paymentStatus":"Completed","transactionId":"VOYAGE-1765799809026"}
+[2025-12-15T11:56:51.053Z] 📂 file: doc-68e8e85067e3c6bf0b9c1364-1765799811041.jpg
+[2025-12-15T12:01:05.546Z] 👉 /book Endpoint Hit
+[2025-12-15T12:01:05.546Z] 📥 user: {"id":"68e8e85067e3c6bf0b9c1364","email":"bwn.1903@gmail.com","name":"Ravi Golaviya"}
+[2025-12-15T12:01:05.546Z] 📥 body: {"packageId":"6910cd35d555b7049d4605de","clientName":"Ravi Golaviya","clientEmail":"bwn.1903@gmail.com","clientPhone":"5465456465","packageName":"Ooty & Kodaikanal Family Vacation","date":"2026-01-01","guests":"1","requests":"","location":"Tamil Nadu, India","duration":"5","totalAmount":"35000","paymentStatus":"Completed","transactionId":"VOYAGE-1765800063530"}
+[2025-12-15T12:01:05.546Z] 📂 file: doc-68e8e85067e3c6bf0b9c1364-1765800065538.jpg
+[2025-12-15T12:39:08.557Z] 👉 /book Endpoint Hit
+[2025-12-15T12:39:08.557Z] 📥 user: {"id":"68e8e85067e3c6bf0b9c1364","email":"bwn.1903@gmail.com","name":"Ravi Golaviya"}
+[2025-12-15T12:39:08.557Z] 📥 body: {"packageId":"6910cd35d555b7049d4605de","clientName":"Ravi Golaviya","clientEmail":"bwn.1903@gmail.com","clientPhone":"5556566565","packageName":"Ooty & Kodaikanal Family Vacation","date":"2026-01-01","guests":"1","requests":"","location":"Tamil Nadu, India","duration":"5","totalAmount":"35000","paymentStatus":"Completed","transactionId":"VOYAGE-1765802346547","document":"null","parentRequestId":"693ff64f4c3d9970804fbc7e","isAddOn":"true","previousDocumentPath":"uploads/documents/doc-68e8e85067e3c6bf0b9c1364-1765799503540.jpg"}
+[2025-12-15T12:39:08.557Z] 📂 file: MISSING
+[2025-12-15T12:39:08.558Z] 📂 Reusing document: uploads/documents/doc-68e8e85067e3c6bf0b9c1364-1765799503540.jpg
+[2025-12-15T12:41:54.166Z] 👉 /book Endpoint Hit
+[2025-12-15T12:41:54.167Z] 📥 user: {"id":"68e8e85067e3c6bf0b9c1364","email":"bwn.1903@gmail.com","name":"Ravi Golaviya"}
+[2025-12-15T12:41:54.167Z] 📥 body: {"packageId":"6910ccc1d555b7049d4605b9","clientName":"Ravi Golaviya","clientEmail":"bwn.1903@gmail.com","clientPhone":"5556566565","packageName":"Kashmir Paradise Family Tour","date":"2026-01-01","guests":"1","requests":"","location":"Srinagar, Kashmir","duration":"6","totalAmount":"45000","paymentStatus":"Completed","transactionId":"VOYAGE-1765802512150","document":"null","parentRequestId":"693ff64f4c3d9970804fbc7e","isAddOn":"true","previousDocumentPath":"uploads/documents/doc-68e8e85067e3c6bf0b9c1364-1765799503540.jpg"}
+[2025-12-15T12:41:54.167Z] 📂 file: MISSING
+[2025-12-15T12:41:54.168Z] 📂 Reusing document: uploads/documents/doc-68e8e85067e3c6bf0b9c1364-1765799503540.jpg
+[2025-12-16T05:45:40.025Z] 👉 /book Endpoint Hit
+[2025-12-16T05:45:40.030Z] 📥 user: {"id":"691b039ca80c0d24a268d743","email":"vishvabhuva6206@gmail.com","name":"vishva"}
+[2025-12-16T05:45:40.032Z] 📥 body: {"packageId":"6925edff32a4c8c2e98feefc","clientName":"vishva","clientEmail":"vishvabhuva6206@gmail.com","clientPhone":"8736483468","packageName":"Andean Legacy: Inca History and Peruvian Life","date":"2025-12-31","guests":"1","requests":"","location":"Peru (Cusco & Sacred Valley)","duration":"8","totalAmount":"65000","paymentStatus":"Completed","transactionId":"VOYAGE-1765863937980","document":"null","parentRequestId":"6927f497f3c3db26cb476550","isAddOn":"true","previousDocumentPath":"uploads/documents/doc-691b039ca80c0d24a268d743-1764226199982.png"}
+[2025-12-16T05:45:40.035Z] 📂 file: MISSING
+[2025-12-16T05:45:40.048Z] 📂 Reusing document: uploads/documents/doc-691b039ca80c0d24a268d743-1764226199982.png
+[2025-12-17T01:57:48.091Z] 👉 /book Endpoint Hit
+[2025-12-17T01:57:48.095Z] 📥 user: {"id":"6926b7bbe6332f98cfab984d","email":"priyanshidonga4@gmail.com","name":"priyanshi"}
+[2025-12-17T01:57:48.099Z] 📥 body: {"packageId":"6925ea6d32a4c8c2e98feeb5","clientName":"priyanshi","clientEmail":"priyanshidonga4@gmail.com","clientPhone":"5434567654","packageName":"Goan Beach Bliss","date":"2025-12-25","guests":"1","requests":"nice place","location":"Goa, India","duration":"6","totalAmount":"25000","paymentStatus":"Completed","transactionId":"VOYAGE-1765936666026","isAddOn":"false"}
+[2025-12-17T01:57:48.100Z] 📂 file: doc-6926b7bbe6332f98cfab984d-1765936668080.png
+[2025-12-17T01:59:21.465Z] 👉 /book Endpoint Hit
+[2025-12-17T01:59:21.467Z] 📥 user: {"id":"6926b7bbe6332f98cfab984d","email":"priyanshidonga4@gmail.com","name":"priyanshi"}
+[2025-12-17T01:59:21.469Z] 📥 body: {"packageId":"6925e29232a4c8c2e98fee7c","clientName":"priyanshi","clientEmail":"priyanshidonga4@gmail.com","clientPhone":"8176543456","packageName":"Andaman Island Leisure Trip","date":"2025-12-27","guests":"1","requests":"","location":"Port Blair, Havelock Island, Neil Island (Andaman Islands, India)","duration":"6","totalAmount":"42000","paymentStatus":"Completed","transactionId":"VOYAGE-1765936759442","document":"null","parentRequestId":"6926b863e6332f98cfab988f","isAddOn":"true","previousDocumentPath":"uploads/documents/doc-6926b7bbe6332f98cfab984d-1764145251940.jpg"}
+[2025-12-17T01:59:21.472Z] 📂 file: MISSING
+[2025-12-17T01:59:21.483Z] 📂 Reusing document: uploads/documents/doc-6926b7bbe6332f98cfab984d-1764145251940.jpg
+[2025-12-18T05:18:50.633Z] 👉 /book Endpoint Hit
+[2025-12-18T05:18:50.635Z] 📥 user: {"id":"691b039ca80c0d24a268d743","email":"vishvabhuva6206@gmail.com","name":"vishva"}
+[2025-12-18T05:18:50.636Z] 📥 body: {"packageId":"6925edff32a4c8c2e98feefc","clientName":"vishva","clientEmail":"vishvabhuva6206@gmail.com","clientPhone":"4567898765","packageName":"Andean Legacy: Inca History and Peruvian Life","date":"2025-12-26","guests":"1","requests":"","location":"Peru (Cusco & Sacred Valley)","duration":"8","totalAmount":"65000","paymentStatus":"Completed","transactionId":"VOYAGE-1766035128599","isAddOn":"false"}
+[2025-12-18T05:18:50.636Z] 📂 file: doc-691b039ca80c0d24a268d743-1766035130627.png
+[2025-12-18T05:21:52.719Z] 👉 /book Endpoint Hit
+[2025-12-18T05:21:52.720Z] 📥 user: {"id":"691b039ca80c0d24a268d743","email":"vishvabhuva6206@gmail.com","name":"vishva"}
+[2025-12-18T05:21:52.720Z] 📥 body: {"packageId":"6925edff32a4c8c2e98feefc","clientName":"vishva","clientEmail":"vishvabhuva6206@gmail.com","clientPhone":"4578765347","packageName":"Andean Legacy: Inca History and Peruvian Life","date":"2025-12-31","guests":"1","requests":"","location":"Peru (Cusco & Sacred Valley)","duration":"8","totalAmount":"65000","paymentStatus":"Completed","transactionId":"VOYAGE-1766035310693","isAddOn":"false"}
+[2025-12-18T05:21:52.721Z] 📂 file: doc-691b039ca80c0d24a268d743-1766035312716.png
+[2025-12-18T05:39:39.030Z] 👉 /book Endpoint Hit
+[2025-12-18T05:39:39.031Z] 📥 user: {"id":"691b039ca80c0d24a268d743","email":"vishvabhuva6206@gmail.com","name":"vishva"}
+[2025-12-18T05:39:39.031Z] 📥 body: {"packageId":"6925ecea32a4c8c2e98feedb","clientName":"vishva","clientEmail":"vishvabhuva6206@gmail.com","clientPhone":"3456789876","packageName":"Timeless Kyoto: Shrines and Traditions","date":"2025-12-31","guests":"1","requests":"","location":"Kyoto, Japan","duration":"3","totalAmount":"21000","paymentStatus":"Completed","transactionId":"VOYAGE-1766036377000","isAddOn":"false","cardName":"vishva","last4Digits":"6789"}
+[2025-12-18T05:39:39.031Z] 📂 file: doc-691b039ca80c0d24a268d743-1766036379024.png
+[2025-12-19T16:28:17.208Z] 👉 /book Endpoint Hit
+[2025-12-19T16:28:17.214Z] 📥 user: {"id":"691b039ca80c0d24a268d743","email":"vishvabhuva6206@gmail.com","name":"vishva"}
+[2025-12-19T16:28:17.216Z] 📥 body: {"packageId":"6925e03732a4c8c2e98fee5b","clientName":"vishva","clientEmail":"vishvabhuva6206@gmail.com","clientPhone":"9876543210","packageName":"Rajasthan Family Heritage Circuit","date":"2026-01-09","guests":"1","requests":"hyyy","location":"Jaipur, Jodhpur, Udaipur","duration":"8","totalAmount":"44000","paymentStatus":"Completed","transactionId":"VOYAGE-1766161695153","isAddOn":"false","cardName":"vishva","last4Digits":"9876"}
+[2025-12-19T16:28:17.218Z] 📂 file: doc-691b039ca80c0d24a268d743-1766161697193.png
+[2025-12-19T16:31:14.264Z] 👉 /book Endpoint Hit
+[2025-12-19T16:31:14.267Z] 📥 user: {"id":"691b039ca80c0d24a268d743","email":"vishvabhuva6206@gmail.com","name":"vishva"}
+[2025-12-19T16:31:14.268Z] 📥 body: {"packageId":"6925e5cd32a4c8c2e98fee89","clientName":"vishva","clientEmail":"vishvabhuva6206@gmail.com","clientPhone":"5434567654","packageName":"Jawai Wilderness Glamping","date":"2026-01-10","guests":"1","requests":"hyy","location":"Jawai (Near Falna/Pali)","duration":"5","totalAmount":"48000","paymentStatus":"Completed","transactionId":"VOYAGE-1766161872237","document":"null","parentRequestId":"6925f33032a4c8c2e98ff006","isAddOn":"true","cardName":"vishva","last4Digits":"6543","previousDocumentPath":"uploads/documents/doc-691b039ca80c0d24a268d743-1764094768286.jpg"}
+[2025-12-19T16:31:14.270Z] 📂 file: MISSING
+[2025-12-19T16:31:14.280Z] 📂 Reusing document: uploads/documents/doc-691b039ca80c0d24a268d743-1764094768286.jpg
+[2025-12-19T16:35:23.488Z] 👉 /book Endpoint Hit
+[2025-12-19T16:35:23.490Z] 📥 user: {"id":"691b039ca80c0d24a268d743","email":"vishvabhuva6206@gmail.com","name":"vishva"}
+[2025-12-19T16:35:23.494Z] 📥 body: {"packageId":"6925edff32a4c8c2e98feefc","clientName":"vishva","clientEmail":"vishvabhuva6206@gmail.com","clientPhone":"6765432345","packageName":"Andean Legacy: Inca History and Peruvian Life","date":"2026-01-23","guests":"1","requests":"hyy","location":"Peru (Cusco & Sacred Valley)","duration":"8","totalAmount":"65000","paymentStatus":"Completed","transactionId":"VOYAGE-1766162121449","isAddOn":"false","cardName":"vishva","last4Digits":"7777"}
+[2025-12-19T16:35:23.495Z] 📂 file: doc-691b039ca80c0d24a268d743-1766162123475.png
+[2025-12-24T06:00:19.824Z] 👉 /book Endpoint Hit
+[2025-12-24T06:00:19.830Z] 📥 user: {"id":"691b039ca80c0d24a268d743","email":"vishvabhuva6206@gmail.com","name":"vishva"}
+[2025-12-24T06:00:19.833Z] 📥 body: {"packageId":"6925edff32a4c8c2e98feefc","clientName":"vishva","clientEmail":"vishvabhuva6206@gmail.com","clientPhone":"4567876543","packageName":"Andean Legacy: Inca History and Peruvian Life","date":"2025-12-31","guests":"1","requests":"","location":"Peru (Cusco & Sacred Valley)","duration":"8","totalAmount":"65000","paymentStatus":"Completed","transactionId":"VOYAGE-1766556017763","isAddOn":"false","cardName":"vishva","last4Digits":"5678"}
+[2025-12-24T06:00:19.835Z] 📂 file: doc-691b039ca80c0d24a268d743-1766556019804.png
+[2025-12-25T05:25:02.687Z] 👉 /book Endpoint Hit
+[2025-12-25T05:25:02.692Z] 📥 user: {"id":"691b039ca80c0d24a268d743","email":"vishvabhuva6206@gmail.com","name":"vishva"}
+[2025-12-25T05:25:02.694Z] 📥 body: {"packageId":"6925edff32a4c8c2e98feefc","clientName":"vishva","clientEmail":"vishvabhuva6206@gmail.com","clientPhone":"9876545678","packageName":"Andean Legacy: Inca History and Peruvian Life","date":"2025-12-26","guests":"1","requests":"","location":"Peru (Cusco & Sacred Valley)","duration":"8","totalAmount":"65000","paymentStatus":"Completed","transactionId":"VOYAGE-1766640300635","isAddOn":"false","cardName":"vishva","last4Digits":"9765"}
+[2025-12-25T05:25:02.696Z] 📂 file: doc-691b039ca80c0d24a268d743-1766640302667.png
+[2025-12-25T05:31:06.707Z] 👉 /book Endpoint Hit
+[2025-12-25T05:31:06.710Z] 📥 user: {"id":"691b039ca80c0d24a268d743","email":"vishvabhuva6206@gmail.com","name":"vishva"}
+[2025-12-25T05:31:06.711Z] 📥 body: {"packageId":"6925edff32a4c8c2e98feefc","clientName":"vishva","clientEmail":"vishvabhuva6206@gmail.com","clientPhone":"9876548987","packageName":"Andean Legacy: Inca History and Peruvian Life","date":"2025-12-29","guests":"1","requests":"","location":"Peru (Cusco & Sacred Valley)","duration":"8","totalAmount":"65000","paymentStatus":"Completed","transactionId":"VOYAGE-1766640664628","isAddOn":"false","cardName":"vishva","last4Digits":"9765"}
+[2025-12-25T05:31:06.713Z] 📂 file: doc-691b039ca80c0d24a268d743-1766640666682.png
+[2025-12-25T05:35:51.620Z] 👉 /book Endpoint Hit
+[2025-12-25T05:35:51.622Z] 📥 user: {"id":"691b039ca80c0d24a268d743","email":"vishvabhuva6206@gmail.com","name":"vishva"}
+[2025-12-25T05:35:51.623Z] 📥 body: {"packageId":"6925edff32a4c8c2e98feefc","clientName":"vishva","clientEmail":"vishvabhuva6206@gmail.com","clientPhone":"9876545665","packageName":"Andean Legacy: Inca History and Peruvian Life","date":"2025-12-31","guests":"1","requests":"","location":"Peru (Cusco & Sacred Valley)","duration":"8","totalAmount":"65500","paymentStatus":"Completed","transactionId":"VOYAGE-1766640949556","cabBooking":"true","cabBookingPrice":"500","isAddOn":"false","cardName":"vishva","last4Digits":"4356"}
+[2025-12-25T05:35:51.625Z] 📂 file: doc-691b039ca80c0d24a268d743-1766640951597.png
+[2025-12-25T05:40:30.518Z] 👉 /book Endpoint Hit
+[2025-12-25T05:40:30.521Z] 📥 user: {"id":"691b039ca80c0d24a268d743","email":"vishvabhuva6206@gmail.com","name":"vishva"}
+[2025-12-25T05:40:30.524Z] 📥 body: {"packageId":"6925edff32a4c8c2e98feefc","clientName":"vishva","clientEmail":"vishvabhuva6206@gmail.com","clientPhone":"9876545678","packageName":"Andean Legacy: Inca History and Peruvian Life","date":"2025-12-26","guests":"1","requests":"","location":"Peru (Cusco & Sacred Valley)","duration":"8","totalAmount":"65500","paymentStatus":"Completed","transactionId":"VOYAGE-1766641228476","cabBooking":"true","cabBookingPrice":"500","isAddOn":"false","cardName":"vishva","last4Digits":"7583"}
+[2025-12-25T05:40:30.526Z] 📂 file: doc-691b039ca80c0d24a268d743-1766641230506.png
+[2025-12-26T04:38:42.913Z] 👉 /book Endpoint Hit
+[2025-12-26T04:38:42.919Z] 📥 user: {"id":"691b039ca80c0d24a268d743","email":"vishvabhuva6206@gmail.com","name":"vishva"}
+[2025-12-26T04:38:42.921Z] 📥 body: {"packageId":"6925edff32a4c8c2e98feefc","clientName":"vishva","clientEmail":"vishvabhuva6206@gmail.com","clientPhone":"3456789876","packageName":"Andean Legacy: Inca History and Peruvian Life","date":"2025-12-27","guests":"1","requests":"","location":"Peru (Cusco & Sacred Valley)","duration":"8","totalAmount":"65500","paymentStatus":"Completed","transactionId":"VOYAGE-1766723920858","cabBooking":"true","cabBookingPrice":"500","isAddOn":"false","cardName":"vishva","last4Digits":"3485"}
+[2025-12-26T04:38:42.924Z] 📂 file: doc-691b039ca80c0d24a268d743-1766723922889.png
+[2025-12-26T05:33:39.044Z] 👉 /book Endpoint Hit
+[2025-12-26T05:33:39.048Z] 📥 user: {"id":"691b039ca80c0d24a268d743","email":"vishvabhuva6206@gmail.com","name":"vishva"}
+[2025-12-26T05:33:39.051Z] 📥 body: {"packageId":"6925edff32a4c8c2e98feefc","clientName":"vishva","clientEmail":"vishvabhuva6206@gmail.com","clientPhone":"","packageName":"Andean Legacy: Inca History and Peruvian Life","date":"2025-12-30","guests":"5","requests":"","location":"Peru (Cusco & Sacred Valley)","duration":"8","totalAmount":"325000","paymentStatus":"Completed","transactionId":"VOYAGE-1766727216997","document":"null","cabBooking":"false","cabBookingPrice":"0","parentRequestId":"6940f20496914bab0ae8e1fd","isAddOn":"true","cardName":"vishva","last4Digits":"2368"}
+[2025-12-26T05:33:39.053Z] 📂 file: MISSING
+[2025-12-26T05:33:39.063Z] ❌ Missing Document File - req.file is undefined and no previousDocumentPath
+[2025-12-26T06:02:08.720Z] 👉 /book Endpoint Hit
+[2025-12-26T06:02:08.722Z] 📥 user: {"id":"691b039ca80c0d24a268d743","email":"vishvabhuva6206@gmail.com","name":"vishva"}
+[2025-12-26T06:02:08.724Z] 📥 body: {"packageId":"6925edff32a4c8c2e98feefc","clientName":"vishva","clientEmail":"vishvabhuva6206@gmail.com","clientPhone":"8357863478","packageName":"Andean Legacy: Inca History and Peruvian Life","date":"2026-01-15","guests":"1","requests":"","location":"Peru (Cusco & Sacred Valley)","duration":"8","totalAmount":"65500","paymentStatus":"Completed","transactionId":"VOYAGE-1766728926649","cabBooking":"true","cabBookingPrice":"500","isAddOn":"false","cardName":"vishva","last4Digits":"5743"}
+[2025-12-26T06:02:08.725Z] 📂 file: doc-691b039ca80c0d24a268d743-1766728928693.png
+[2025-12-26T09:37:58.604Z] 👉 /book Endpoint Hit
+[2025-12-26T09:37:58.609Z] 📥 user: {"id":"691b039ca80c0d24a268d743","email":"vishvabhuva6206@gmail.com","name":"vishva"}
+[2025-12-26T09:37:58.610Z] 📥 body: {"packageId":"6925edff32a4c8c2e98feefc","clientName":"vishva","clientEmail":"vishvabhuva6206@gmail.com","clientPhone":"8736483468","packageName":"Andean Legacy: Inca History and Peruvian Life","date":"2025-12-30","guests":"1","requests":"","location":"Peru (Cusco & Sacred Valley)","duration":"8","totalAmount":"65500","paymentStatus":"Completed","transactionId":"VOYAGE-1766741876582","document":"null","cabBooking":"true","cabBookingPrice":"500","parentRequestId":"6940f20496914bab0ae8e1fd","isAddOn":"true","cardName":"vishva","last4Digits":"6482","previousDocumentPath":"uploads/documents/doc-691b039ca80c0d24a268d743-1764226199982.png"}
+[2025-12-26T09:37:58.612Z] 📂 file: MISSING
+[2025-12-26T09:37:58.622Z] 📂 Reusing document: uploads/documents/doc-691b039ca80c0d24a268d743-1764226199982.png
+[2025-12-26T09:49:28.205Z] 👉 /book Endpoint Hit
+[2025-12-26T09:49:28.207Z] 📥 user: {"id":"691b039ca80c0d24a268d743","email":"vishvabhuva6206@gmail.com","name":"vishva"}
+[2025-12-26T09:49:28.208Z] 📥 body: {"packageId":"6925edff32a4c8c2e98feefc","clientName":"vishva","clientEmail":"vishvabhuva6206@gmail.com","clientPhone":"8736483468","packageName":"Andean Legacy: Inca History and Peruvian Life","date":"2025-12-30","guests":"2","requests":"","location":"Peru (Cusco & Sacred Valley)","duration":"8","totalAmount":"130000","paymentStatus":"Completed","transactionId":"VOYAGE-1766742566179","document":"null","cabBooking":"false","cabBookingPrice":"0","parentRequestId":"694e57766ac7bb6a5c33d1c2","isAddOn":"true","cardName":"vishva","last4Digits":"6587","previousDocumentPath":"uploads/documents/doc-691b039ca80c0d24a268d743-1764226199982.png"}
+[2025-12-26T09:49:28.209Z] 📂 file: MISSING
+[2025-12-26T09:49:28.217Z] 📂 Reusing document: uploads/documents/doc-691b039ca80c0d24a268d743-1764226199982.png
+[2026-02-13T13:15:50.171Z] 👉 /book Endpoint Hit
+[2026-02-13T13:15:50.177Z] 📥 user: {"id":"691b039ca80c0d24a268d743","email":"vishvabhuva6206@gmail.com","name":"vishva"}
+[2026-02-13T13:15:50.181Z] 📥 body: {"packageId":"6925edff32a4c8c2e98feefc","clientName":"vishva","clientEmail":"vishvabhuva6206@gmail.com","clientPhone":"9876543210","packageName":"Andean Legacy: Inca History and Peruvian Life","date":"2026-02-26","guests":"1","requests":"","location":"Peru (Cusco & Sacred Valley)","duration":"8","totalAmount":"65500","paymentStatus":"Completed","transactionId":"VOYAGE-1770988548082","cabBooking":"true","cabBookingPrice":"500","isAddOn":"false","cardName":"vishva","last4Digits":"4324"}
+[2026-02-13T13:15:50.183Z] 📂 file: doc-691b039ca80c0d24a268d743-1770988550136.png
+[2026-02-17T07:23:13.340Z] 👉 /book Endpoint Hit
+[2026-02-17T07:23:13.348Z] 📥 user: {"id":"699417147c47c42993653db4","email":"krishajetani289@gmail.com","name":"krisha"}
+[2026-02-17T07:23:13.350Z] 📥 body: {"packageId":"6925edff32a4c8c2e98feefc","clientName":"krisha","clientEmail":"krishajetani289@gmail.com","clientPhone":"9313177605","packageName":"Andean Legacy: Inca History and Peruvian Life","date":"2026-02-26","guests":"1","requests":"","location":"Peru (Cusco & Sacred Valley)","duration":"8","totalAmount":"65000","paymentStatus":"Completed","transactionId":"VOYAGE-1771312991273","cabBooking":"false","cabBookingPrice":"0","isAddOn":"false","cardName":"krisha","last4Digits":"5432"}
+[2026-02-17T07:23:13.354Z] 📂 file: doc-699417147c47c42993653db4-1771312993313.png
+[2026-02-17T07:34:54.937Z] 👉 /book Endpoint Hit
+[2026-02-17T07:34:54.939Z] 📥 user: {"id":"699417147c47c42993653db4","email":"krishajetani289@gmail.com","name":"krisha"}
+[2026-02-17T07:34:54.942Z] 📥 body: {"packageId":"6925eb0432a4c8c2e98feec2","clientName":"krisha","clientEmail":"krishajetani289@gmail.com","clientPhone":"9313177605","packageName":"Maldives Serenity Escape","date":"2026-02-28","guests":"1","requests":"","location":"Maldives","duration":"7","totalAmount":"60000","paymentStatus":"Completed","transactionId":"VOYAGE-1771313692887","cabBooking":"false","cabBookingPrice":"0","isAddOn":"false","cardName":"krisha","last4Digits":"4567"}
+[2026-02-17T07:34:54.944Z] 📂 file: doc-699417147c47c42993653db4-1771313694915.png
+[2026-02-17T07:54:48.468Z] 👉 /book Endpoint Hit
+[2026-02-17T07:54:48.472Z] 📥 user: {"id":"6994053110b577e3fb40f883","email":"ravigolaviya65@gmail.com","name":"Ravi"}
+[2026-02-17T07:54:48.476Z] 📥 body: {"packageId":"6925edff32a4c8c2e98feefc","clientName":"Ravi","clientEmail":"ravigolaviya65@gmail.com","clientPhone":"1264646557","packageName":"Andean Legacy: Inca History and Peruvian Life","date":"2026-02-25","guests":"1","requests":"","location":"Peru (Cusco & Sacred Valley)","duration":"8","totalAmount":"65500","paymentStatus":"Completed","transactionId":"VOYAGE-1771314886393","cabBooking":"true","cabBookingPrice":"500","isAddOn":"false","cardName":"Ravi","last4Digits":"6654"}
+[2026-02-17T07:54:48.479Z] 📂 file: doc-6994053110b577e3fb40f883-1771314888435.png
+[2026-02-20T05:44:17.477Z] 👉 /book Endpoint Hit
+[2026-02-20T05:44:17.481Z] 📥 user: {"id":"6994053110b577e3fb40f883","email":"ravigolaviya65@gmail.com","name":"Ravi"}
+[2026-02-20T05:44:17.484Z] 📥 body: {"packageId":"6925edff32a4c8c2e98feefc","clientName":"Ravi","clientEmail":"ravigolaviya65@gmail.com","clientPhone":"1264646557","packageName":"Andean Legacy: Inca History and Peruvian Life","date":"2026-02-25","guests":"1","requests":"","location":"Peru (Cusco & Sacred Valley)","duration":"8","totalAmount":"65000","paymentStatus":"Completed","transactionId":"VOYAGE-1771566255448","document":"null","cabBooking":"false","cabBookingPrice":"0","parentRequestId":"69941ec8b7ba55d8b685fb02","isAddOn":"true","cardName":"Ravi","last4Digits":"6347","previousDocumentPath":"uploads/documents/doc-6994053110b577e3fb40f883-1771314888435.png"}
+[2026-02-20T05:44:17.486Z] 📂 file: MISSING
+[2026-02-20T05:44:17.492Z] 📂 Reusing document: uploads/documents/doc-6994053110b577e3fb40f883-1771314888435.png
+[2026-02-24T06:32:35.817Z] 👉 /book Endpoint Hit
+[2026-02-24T06:32:35.822Z] 📥 user: {"id":"6994053110b577e3fb40f883","email":"ravigolaviya65@gmail.com","name":"Ravi"}
+[2026-02-24T06:32:35.825Z] 📥 body: {"packageId":"6925edff32a4c8c2e98feefc","clientName":"Ravi","clientEmail":"ravigolaviya65@gmail.com","clientPhone":"8736483468","packageName":"Andean Legacy: Inca History and Peruvian Life","date":"2026-07-23","guests":"1","requests":"hellooooooooooo","location":"Peru (Cusco & Sacred Valley)","duration":"8","totalAmount":"65500","paymentStatus":"Completed","transactionId":"VOYAGE-1771914753756","cabBooking":"true","cabBookingPrice":"500","isAddOn":"false","cardName":"Ravi","last4Digits":"4567"}
+[2026-02-24T06:32:35.826Z] 📂 file: doc-6994053110b577e3fb40f883-1771914755792.png
+[2026-02-24T06:47:04.221Z] 👉 /book Endpoint Hit
+[2026-02-24T06:47:04.223Z] 📥 user: {"id":"6994053110b577e3fb40f883","email":"ravigolaviya65@gmail.com","name":"Ravi"}
+[2026-02-24T06:47:04.226Z] 📥 body: {"packageId":"6925edff32a4c8c2e98feefc","clientName":"Ravi","clientEmail":"ravigolaviya65@gmail.com","clientPhone":"8736483468","packageName":"Andean Legacy: Inca History and Peruvian Life","date":"2026-07-23","guests":"3","requests":"","location":"Peru (Cusco & Sacred Valley)","duration":"8","totalAmount":"195000","paymentStatus":"Completed","transactionId":"VOYAGE-1771915622177","cabBooking":"false","cabBookingPrice":"0","parentRequestId":"699d4603591cb62a205b3174","isAddOn":"true","cardName":"Ravi","last4Digits":"4567","previousDocumentPath":"uploads/documents/doc-6994053110b577e3fb40f883-1771914755792.png"}
+[2026-02-24T06:47:04.228Z] 📂 file: doc-6994053110b577e3fb40f883-1771915624202.png
+[2026-02-24T06:48:14.654Z] 👉 /book Endpoint Hit
+[2026-02-24T06:48:14.658Z] 📥 user: {"id":"6994053110b577e3fb40f883","email":"ravigolaviya65@gmail.com","name":"Ravi"}
+[2026-02-24T06:48:14.661Z] 📥 body: {"packageId":"6925ecea32a4c8c2e98feedb","clientName":"Ravi","clientEmail":"ravigolaviya65@gmail.com","clientPhone":"8736483468","packageName":"Timeless Kyoto: Shrines and Traditions","date":"2026-03-13","guests":"1","requests":"","location":"Kyoto, Japan","duration":"3","totalAmount":"21500","paymentStatus":"Completed","transactionId":"VOYAGE-1771915692624","document":"null","cabBooking":"true","cabBookingPrice":"500","parentRequestId":"699d4603591cb62a205b3174","isAddOn":"true","cardName":"Ravi","last4Digits":"4323","previousDocumentPath":"uploads/documents/doc-6994053110b577e3fb40f883-1771914755792.png"}
+[2026-02-24T06:48:14.663Z] 📂 file: MISSING
+[2026-02-24T06:48:14.673Z] 📂 Reusing document: uploads/documents/doc-6994053110b577e3fb40f883-1771914755792.png
+[2026-03-07T00:26:56.062Z] 👉 /book Endpoint Hit
+[2026-03-07T00:26:56.069Z] 📥 user: {"id":"69ab6b7d86cec10776beaa0a","email":"vishvabhuva6206@gmail.com","name":"vishva"}
+[2026-03-07T00:26:56.072Z] 📥 body: {"packageId":"6925e29232a4c8c2e98fee7c","clientName":"vishva","clientEmail":"vishvabhuva6206@gmail.com","clientPhone":"6543456787","packageName":"Andaman Island Leisure Trip","date":"2026-03-12","guests":"1","requests":"","location":"Port Blair, Havelock Island, Neil Island (Andaman Islands, India)","duration":"6","totalAmount":"42000","paymentStatus":"Completed","transactionId":"VOYAGE-1772843214000","cabBooking":"false","cabBookingPrice":"0","isAddOn":"false","cardName":"vishva","last4Digits":"3456"}
+[2026-03-07T00:26:56.075Z] 📂 file: doc-69ab6b7d86cec10776beaa0a-1772843216041.png
