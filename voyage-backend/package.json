@@ -6,7 +6,8 @@
   "type": "commonjs",
   "scripts": {
     "start": "NODE_ENV=production node server.js",
-    "dev": "node node_modules/nodemon/bin/nodemon.js server.js"
+    "dev": "node node_modules/nodemon/bin/nodemon.js server.js",
+    "build": "echo \"No build step required\""
   },
   "dependencies": {
     "axios": "^1.13.2",
