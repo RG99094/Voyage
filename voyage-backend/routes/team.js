@@ -4,27 +4,12 @@ const express = require("express");
 const router = express.Router();
 const adminAuth = require("../middleware/adminAuth");
 const TeamMember = require("../models/TeamMember");
-const multer = require("multer");
-const path = require("path");
-const fs = require("fs");
+const { cloudinary, createUpload } = require("../config/cloudinary");
 
 /* ======================================================
-⚙️ MULTER STORAGE SETUP FOR TEAM IMAGES
+☁️ CLOUDINARY UPLOAD CONFIGURATION
 ====================================================== */
-const storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    // ✅ FIX: Use correct path
-    const uploadPath = path.join(__dirname, "..", "uploads");
-    if (!fs.existsSync(uploadPath)) fs.mkdirSync(uploadPath, { recursive: true });
-    cb(null, uploadPath);
-  },
-  filename: function (req, file, cb) {
-    cb(null, "team-" + Date.now() + path.extname(file.originalname));
-  },
-});
-
-// ✅ FIX: The modal sends the file as 'imageFile'
-const upload = multer({ storage }).single("imageFile");
+const upload = createUpload("voyage/team", "imageFile");
 
 /* ======================================================
 👥 GET ALL TEAM MEMBERS
@@ -49,7 +34,7 @@ POST /api/team/add
 router.post("/add", adminAuth, upload, async (req, res) => {
   try {
     const { name, title } = req.body;
-    const imagePath = req.file ? `uploads/${req.file.filename}` : "";
+    const imagePath = req.file ? req.file.path : ""; // ☁️ Cloudinary URL
 
     if (!name || !title || !imagePath) {
       return res.status(400).json({
@@ -81,7 +66,7 @@ PATCH /api/team/update/:id
 router.patch("/update/:id", adminAuth, upload, async (req, res) => {
   try {
     const updateData = { ...req.body };
-    if (req.file) updateData.image = `uploads/${req.file.filename}`;
+    if (req.file) updateData.image = req.file.path; // ☁️ Cloudinary URL
 
     const updatedMember = await TeamMember.findByIdAndUpdate(
       req.params.id,
@@ -121,10 +106,17 @@ router.delete("/:id", adminAuth, async (req, res) => {
         .json({ success: false, message: "Team member not found." });
     }
 
-    // Delete old image if it exists
-    const imagePath = path.join(__dirname, "..", member.image);
-    if (member.image && fs.existsSync(imagePath)) {
-      fs.unlinkSync(imagePath);
+    // ☁️ Optionally delete image from Cloudinary
+    if (member.image && member.image.includes("cloudinary")) {
+      try {
+        // Extract public_id from Cloudinary URL
+        const parts = member.image.split("/");
+        const folderAndFile = parts.slice(parts.indexOf("voyage")).join("/");
+        const publicId = folderAndFile.replace(/\.[^/.]+$/, ""); // Remove extension
+        await cloudinary.uploader.destroy(publicId);
+      } catch (cloudErr) {
+        console.warn("⚠️ Could not delete Cloudinary image:", cloudErr.message);
+      }
     }
 
     res.json({

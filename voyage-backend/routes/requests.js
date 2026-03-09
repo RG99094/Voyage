@@ -10,8 +10,8 @@ const Package = require("../models/Package");
 const Transaction = require("../models/Transaction");
 const { sendBookingConfirmationEmail } = require("../utils/mailer");
 
-// ... (Multer setup remains the same)
-const multer = require("multer");
+// ... (Multer setup replaced with Cloudinary)
+const { createUpload } = require("../config/cloudinary");
 const path = require("path");
 const fs = require("fs");
 
@@ -21,21 +21,11 @@ const logToFile = (message) => {
   const timestamp = new Date().toISOString();
   fs.appendFileSync(logPath, `[${timestamp}] ${message}\n`);
 };
-const docStorage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    const uploadPath = path.join(__dirname, "..", "uploads", "documents");
-    if (!fs.existsSync(uploadPath)) fs.mkdirSync(uploadPath, { recursive: true });
-    cb(null, uploadPath);
-  },
-  filename: (req, file, cb) => {
-    const safeName = req.user.id || "user";
-    cb(null, `doc-${safeName}-${Date.now()}${path.extname(file.originalname)}`);
-  },
-});
-const uploadDoc = multer({
-  storage: docStorage,
-  limits: { fileSize: 50 * 1024 * 1024 }, // Increased to 50MB
-}).single("document");
+
+/* ======================================================
+☁️ Cloudinary Upload Configuration for Documents
+====================================================== */
+const uploadDoc = createUpload("voyage/documents", "document", 50 * 1024 * 1024);
 
 
 /* ======================================================
@@ -153,7 +143,7 @@ router.post("/book", auth, checkBlocked, uploadDoc, async (req, res) => {
     let documentPath = "";
 
     if (req.file) {
-      documentPath = `uploads/documents/${req.file.filename}`;
+      documentPath = req.file.path; // ☁️ Cloudinary URL
     } else if (req.body.previousDocumentPath) {
       // ✅ Allow reuse of previous document
       documentPath = req.body.previousDocumentPath;

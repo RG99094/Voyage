@@ -6,28 +6,14 @@ const { checkBlocked } = require("../middleware/checkBlocked");
 const Client = require("../models/Client");
 const Package = require("../models/Package");
 const bcrypt = require("bcryptjs");
-const multer = require("multer");
-const path = require("path");
-const fs = require("fs");
+const { createUpload } = require("../config/cloudinary");
 
 const router = express.Router();
 
-// ... (Multer Storage Setup remains the same)
-const storage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    const uploadPath = path.join(__dirname, "..", "uploads");
-    if (!fs.existsSync(uploadPath)) fs.mkdirSync(uploadPath, { recursive: true });
-    cb(null, uploadPath);
-  },
-  filename: (req, file, cb) => {
-    cb(null, `profile-${req.user.id}-${Date.now()}${path.extname(file.originalname)}`);
-  },
-});
-
-const upload = multer({
-  storage,
-  limits: { fileSize: 3 * 1024 * 1024 },
-}).single("profileImageFile");
+/* ======================================================
+☁️ Cloudinary Upload Configuration
+====================================================== */
+const upload = createUpload("voyage/profiles", "profileImageFile", 3 * 1024 * 1024);
 
 
 // ... (GET /api/profile remains the same)
@@ -60,13 +46,8 @@ router.post("/update", auth, checkBlocked, upload, async (req, res) => {
       user.socialLinks.linkedin = socialLinks.linkedin || "";
     }
     if (req.file) {
-      if (user.profileImage && user.profileImage !== "uploads/default-avatar.png") {
-        const oldPath = path.join(__dirname, "..", user.profileImage);
-        if (fs.existsSync(oldPath)) {
-          fs.unlinkSync(oldPath);
-        }
-      }
-      user.profileImage = `uploads/${req.file.filename}`;
+      // ☁️ No need to delete old local files — images are on Cloudinary now
+      user.profileImage = req.file.path; // ☁️ Cloudinary URL
     }
     const updatedUser = await user.save();
     const userResponse = updatedUser.toObject();
