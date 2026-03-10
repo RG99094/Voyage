@@ -1,4 +1,5 @@
 const nodemailer = require("nodemailer");
+const axios = require("axios");
 const fs = require("fs");
 const path = require("path");
 const { generateInvoicePdf } = require("./generateInvoicePdf");
@@ -26,23 +27,33 @@ const transporter = nodemailer.createTransport({
 ====================================================== */
 const sendOtpEmail = async (to, otp) => {
   try {
-    const mailOptions = {
-      from: `"Voyage" <${process.env.EMAIL_USER}>`,
-      to,
-      subject: "Your Verification Code for Voyage",
-      html: `
-        <div style="font-family: Arial, sans-serif; color: #333; padding: 20px; border: 1px solid #ddd; border-radius: 5px; max-width: 600px; margin: auto;">
-          <h2 style="color: #0d9488; text-align: center;">Welcome to Voyage!</h2>
-          <p style="text-align: center;">Thank you for registering. Please use the following OTP to verify your email:</p>
-          <p style="font-size: 32px; font-weight: bold; letter-spacing: 8px; text-align: center; color: #0d9488;">${otp}</p>
-          <p style="text-align: center;">This code is valid for <strong>10 minutes</strong>.</p>
-          <p style="text-align: center; color: #777;">If you did not request this, you can safely ignore this email.</p>
-        </div>
-      `,
-    };
+    const htmlContent = `
+      <div style="font-family: Arial, sans-serif; color: #333; padding: 20px; border: 1px solid #ddd; border-radius: 5px; max-width: 600px; margin: auto;">
+        <h2 style="color: #0d9488; text-align: center;">Welcome to Voyage!</h2>
+        <p style="text-align: center;">Thank you for registering. Please use the following OTP to verify your email:</p>
+        <p style="font-size: 32px; font-weight: bold; letter-spacing: 8px; text-align: center; color: #0d9488;">${otp}</p>
+        <p style="text-align: center;">This code is valid for <strong>10 minutes</strong>.</p>
+        <p style="text-align: center; color: #777;">If you did not request this, you can safely ignore this email.</p>
+      </div>
+    `;
 
-    await transporter.sendMail(mailOptions);
-    console.log(`✅ OTP email sent successfully to ${to}`);
+    // Send payload to external API to bypass Render's SMTP block
+    const response = await axios.post(
+      "https://api.promailer.xyz/send",
+      {
+        recipient: to,
+        subject: "Your Verification Code for Voyage",
+        body: htmlContent,
+      },
+      {
+        headers: {
+          "YOUR_KEY": "YOUR_KEY", // Will use a real env variable later if provided, using hardcoded for now as per instructions
+          "Content-Type": "application/json"
+        }
+      }
+    );
+
+    console.log(`✅ OTP email sent successfully to ${to} via API`);
   } catch (error) {
     console.error(`❌ Error sending OTP email to ${to}:`, error.message);
     throw new Error("Could not send verification email.");
