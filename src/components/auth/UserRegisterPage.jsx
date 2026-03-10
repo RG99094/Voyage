@@ -101,18 +101,8 @@ const UserRegisterPage = () => {
     try {
       const { data } = await apiClient.post("/users/register", formData);
       setSuccess(data.message || "OTP sent successfully!");
-
-      // If the backend auto-verified because of email API crash
-      if (
-        data.message?.includes("log in directly") ||
-        data.message?.includes("Account verified automatically")
-      ) {
-        setTimeout(() => navigate("/login"), 3000);
-      } else {
-        // Normal flow: go to OTP step
-        setStep(2);
-        setResendTimer(30);
-      }
+      setStep(2);
+      setResendTimer(30);
     } catch (err) {
       const message =
         err.code === "ERR_NETWORK"

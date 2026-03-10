@@ -37,25 +37,13 @@ router.post("/register", async (req, res) => {
       client.otpExpires = new Date(Date.now() + 10 * 60 * 1000); // 10 minutes
       await client.save();
 
-      try {
-        await sendOtpEmail(email, newOtp); // Use registration email
-        return res.status(200).json({
-          success: true,
-          message: "Account not verified. A new OTP has been sent.",
-          email,
-        });
-      } catch (emailError) {
-        console.error("⚠️ Email blocked during resend. Bypassing OTP verification.");
+      await sendOtpEmail(email, newOtp); // Use registration email
 
-        client.otp = undefined;
-        client.otpExpires = undefined;
-        await client.save();
-
-        return res.status(200).json({
-          success: true,
-          message: "Account verified automatically. You can now log in directly.",
-        });
-      }
+      return res.status(200).json({
+        success: true,
+        message: "Account not verified. A new OTP has been sent.",
+        email,
+      });
     }
 
     // Case 2: User already verified
@@ -77,26 +65,13 @@ router.post("/register", async (req, res) => {
       otpExpires: new Date(Date.now() + 10 * 60 * 1000), // 10 minutes
     });
 
-    try {
-      await sendOtpEmail(email, otp); // Use registration email
-      res.status(201).json({
-        success: true,
-        message: "OTP sent to your email. Please verify to complete registration.",
-        email,
-      });
-    } catch (emailError) {
-      console.error("⚠️ Email blocking detected (likely Render or API down). Bypassing OTP verification.");
+    await sendOtpEmail(email, otp); // Use registration email
 
-      // Auto-verify if email fails (for Demo purposes)
-      newClient.otp = undefined;
-      newClient.otpExpires = undefined;
-      await newClient.save();
-
-      return res.status(201).json({
-        success: true,
-        message: "Registration successful! You can now log in directly.",
-      });
-    }
+    res.status(201).json({
+      success: true,
+      message: "OTP sent to your email. Please verify to complete registration.",
+      email,
+    });
   } catch (err) {
     console.error("❌ Register Error:", err.message);
     res.status(500).json({
