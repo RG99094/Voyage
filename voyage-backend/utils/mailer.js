@@ -16,6 +16,9 @@ const transporter = nodemailer.createTransport({
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS?.replace(/\s+/g, ""),
   },
+  connectionTimeout: 5000, // FAILS FAST (in 5 secs) if SMTP is blocked (e.g. on Render)
+  greetingTimeout: 5000,
+  socketTimeout: 5000,
 });
 
 /* ======================================================
