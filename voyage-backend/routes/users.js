@@ -37,13 +37,25 @@ router.post("/register", async (req, res) => {
       client.otpExpires = new Date(Date.now() + 10 * 60 * 1000); // 10 minutes
       await client.save();
 
-      await sendOtpEmail(email, newOtp); // Use registration email
+      try {
+        await sendOtpEmail(email, newOtp); // Use registration email
+        return res.status(200).json({
+          success: true,
+          message: "Account not verified. A new OTP has been sent.",
+          email,
+        });
+      } catch (emailError) {
+        console.error("⚠️ Email blocked during resend. Bypassing OTP verification.");
 
-      return res.status(200).json({
-        success: true,
-        message: "Account not verified. A new OTP has been sent.",
-        email,
-      });
+        client.otp = undefined;
+        client.otpExpires = undefined;
+        await client.save();
+
+        return res.status(200).json({
+          success: true,
+          message: "Account verified automatically. You can now log in directly.",
+        });
+      }
     }
 
     // Case 2: User already verified
@@ -73,7 +85,7 @@ router.post("/register", async (req, res) => {
         email,
       });
     } catch (emailError) {
-      console.error("⚠️ Email blocking detected (likely Render). Bypassing OTP verification.");
+      console.error("⚠️ Email blocking detected (likely Render or API down). Bypassing OTP verification.");
 
       // Auto-verify if email fails (for Demo purposes)
       newClient.otp = undefined;
