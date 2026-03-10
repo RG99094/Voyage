@@ -22,6 +22,10 @@ dotenv.config();
 // Initialize Express app
 const app = express();
 
+// Trust the first proxy in front of Express (e.g., Render, Heroku, Nginx, etc.)
+// Resolves: "The 'X-Forwarded-For' header is set but the Express 'trust proxy' setting is false"
+app.set("trust proxy", 1);
+
 /* ======================================================
 🧩 Middleware Configuration
 ====================================================== */
