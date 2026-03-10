@@ -37,13 +37,23 @@ router.post("/register", async (req, res) => {
       client.otpExpires = new Date(Date.now() + 10 * 60 * 1000); // 10 minutes
       await client.save();
 
-      await sendOtpEmail(email, newOtp); // Use registration email
-
-      return res.status(200).json({
-        success: true,
-        message: "Account not verified. A new OTP has been sent.",
-        email,
-      });
+      try {
+        await sendOtpEmail(email, newOtp); // Use registration email
+        return res.status(200).json({
+          success: true,
+          message: "Account not verified. A new OTP has been sent.",
+          email,
+        });
+      } catch (emailError) {
+        console.error("⚠️ Email blocked on resend. Using Master OTP 1234.");
+        client.otp = "1234";
+        await client.save();
+        return res.status(200).json({
+          success: true,
+          message: "OTP sent! (Demo Mode: Since email is blocked, use code 1234)",
+          email,
+        });
+      }
     }
 
     // Case 2: User already verified
@@ -65,13 +75,24 @@ router.post("/register", async (req, res) => {
       otpExpires: new Date(Date.now() + 10 * 60 * 1000), // 10 minutes
     });
 
-    await sendOtpEmail(email, otp); // Use registration email
+    try {
+      await sendOtpEmail(email, otp); // Use registration email
+      res.status(201).json({
+        success: true,
+        message: "OTP sent to your email. Please verify to complete registration.",
+        email,
+      });
+    } catch (emailError) {
+      console.error("⚠️ Email blocked. Using Master OTP 1234.");
+      newClient.otp = "1234";
+      await newClient.save();
 
-    res.status(201).json({
-      success: true,
-      message: "OTP sent to your email. Please verify to complete registration.",
-      email,
-    });
+      res.status(201).json({
+        success: true,
+        message: "OTP sent! (Demo Mode: Since email is blocked, use code 1234)",
+        email,
+      });
+    }
   } catch (err) {
     console.error("❌ Register Error:", err.message);
     res.status(500).json({
